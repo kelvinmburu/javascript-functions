@@ -1,11 +1,7 @@
 const { index } = require("cheerio/lib/api/traversing");
 
 function seed() {
-  let arr = [];
-  for (let i = 0; i < arguments.length; i++) {
-    arr[i] = arguments[i];
-  }
-  return arr;
+  return Array.prototype.slice.call(arguments);
 };
 
 function same([x, y], [j, k]) {
